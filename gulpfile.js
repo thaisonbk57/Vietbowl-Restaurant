@@ -30,7 +30,7 @@ gulp.task("sass", () => {
       })
     )
     .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("dist/css/"));
 });
 
 // COMPILE BABEL to ES5 and minify JS code
@@ -39,7 +39,7 @@ gulp.task("script", () => {
     .src("src/script/**/*.js")
     .pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("dist/script/"));
 });
 
 // MINIFY IMAGES
@@ -53,7 +53,7 @@ gulp.task("imagesMin", function() {
         use: [pngquant()]
       })
     )
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("dist/images/"));
 });
 
 // WATCH
