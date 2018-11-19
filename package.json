@@ -1,0 +1,25 @@
+{
+  "name": "vietbowl-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaisonbk57/Vietbowl-Restaurant.git"
+  },
+  "author": "Thai Son Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaisonbk57/Vietbowl-Restaurant/issues"
+  },
+  "homepage": "https://github.com/thaisonbk57/Vietbowl-Restaurant#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2"
+  }
+}
