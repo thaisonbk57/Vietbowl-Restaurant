@@ -17,9 +17,17 @@
   },
   "homepage": "https://github.com/thaisonbk57/Vietbowl-Restaurant#readme",
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^6.26.3",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-imagemin": "^5.0.3",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-pngquant": "^6.0.0",
+    "node-sass": "^4.10.0"
   }
 }
