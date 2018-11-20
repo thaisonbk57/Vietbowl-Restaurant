@@ -83,3 +83,18 @@
     }
   }
 }
+
+// MENU section
+.menu {
+  &__heading {
+    height: 50vh;
+    background: linear-bg($url: "../images/bg-2.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+      @include center;
+    }
+  }
+}

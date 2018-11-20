@@ -150,3 +150,50 @@
     font-weight: 300;
   }
 }
+
+// DISH / MENU-ITEM
+.dish {
+  color: $color-gray-dark-1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+  }
+
+  &__name,
+  &__price {
+    text-transform: uppercase;
+    font-family: "EB Garamond", serif;
+    font-size: 1.8rem;
+    z-index: 3;
+    word-spacing: 3px;
+  }
+
+  &__name {
+    flex-basis: 100%;
+    z-index: 2;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 5px;
+      width: 100%;
+      margin-right: -50%;
+      border-bottom: 1px dotted;
+      z-index: -2;
+    }
+  }
+
+  &__price {
+  }
+  &__content {
+    font-weight: 300;
+  }
+}
