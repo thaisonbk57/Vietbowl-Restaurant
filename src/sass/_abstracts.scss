@@ -24,3 +24,17 @@ $color-secondary: #c7a254;
 @function linear-bg($url) {
   @return linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(#{$url});
 }
+
+@font-face {
+  font-family: "vietbowl1";
+  src: url("./../fonts/NASALIZA_0.TTF");
+}
+
+@font-face {
+  font-family: "vietbowl2";
+  src: url("./../fonts/NASALIZATION-RG_0.TTF");
+}
+@font-face {
+  font-family: "vietbowl3";
+  src: url("./../fonts/NEUROPOL_0.TTF");
+}

@@ -156,3 +156,18 @@
     }
   }
 }
+
+// EVENTS section
+.event {
+  text-align: center;
+  .btn--cta {
+    background: $color-gray-dark-1;
+    margin-top: 4rem;
+    a,
+    a:visited,
+    a:active,
+    a:hover {
+      color: $color-white;
+    }
+  }
+}
