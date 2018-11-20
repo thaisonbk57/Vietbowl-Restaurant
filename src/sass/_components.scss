@@ -70,3 +70,27 @@
     letter-spacing: 5px;
   }
 }
+
+// BUTTON
+.btn {
+  border: none;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &--cta {
+    font-size: 1.8rem;
+    font-family: "EB Garamond", serif;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $color-secondary;
+      color: $color-white;
+    }
+  }
+}

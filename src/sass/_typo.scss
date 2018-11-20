@@ -9,3 +9,22 @@ a:visited {
 ul {
   list-style-type: none;
 }
+
+.heading {
+  &--primary {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-size: 12rem;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    color: $color-white;
+    font-weight: 300;
+  }
+
+  &--secondary {
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: "EB Garamond", serif;
+    text-transform: uppercase;
+  }
+}
