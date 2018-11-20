@@ -32,7 +32,6 @@
 // HERO SECTION
 .hero {
   height: calc(100vh - 190px);
-  background-color: orange;
   background-image: linear-gradient(
       90deg rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.4)
@@ -51,6 +50,36 @@
 
     .btn.btn--cta {
       margin-top: 3rem;
+    }
+  }
+}
+
+.section {
+  padding-top: 10rem;
+}
+
+// STORIES section
+.stories {
+  .story {
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: stretch;
+
+    &__text {
+      text-align: center;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__photos {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        padding: 0 1rem;
+      }
     }
   }
 }

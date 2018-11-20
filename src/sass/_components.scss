@@ -94,3 +94,59 @@
     }
   }
 }
+
+// Article component
+.article {
+  padding: 0 6rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__heading {
+    color: $color-gray-dark-1;
+    font-size: 3rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
+
+    span {
+      display: block;
+    }
+
+    &--secondary {
+      font-family: "Mrs Saint Delafield", cursive;
+      font-size: 12rem;
+      color: $color-gray-light-1;
+      line-height: 1;
+      margin-bottom: -6rem;
+      font-weight: 300;
+    }
+
+    &--main {
+      font-weight: 500;
+    }
+  }
+
+  &__text {
+    color: $color-gray-dark-1;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+}
+
+// OPENING HOURS
+.opening-hour {
+  .day {
+    font-size: 1.6rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+  }
+
+  .hour {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
