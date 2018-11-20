@@ -104,36 +104,35 @@
   justify-content: center;
   flex-direction: column;
 
-  &__heading {
-    color: $color-gray-dark-1;
-    font-size: 3rem;
-    font-family: "EB Garamond", serif;
-    font-weight: 300;
-    margin-bottom: 3rem;
-
-    span {
-      display: block;
-    }
-
-    &--secondary {
-      font-family: "Mrs Saint Delafield", cursive;
-      font-size: 12rem;
-      color: $color-gray-light-1;
-      line-height: 1;
-      margin-bottom: -6rem;
-      font-weight: 300;
-    }
-
-    &--main {
-      font-weight: 500;
-    }
-  }
-
   &__text {
     color: $color-gray-dark-1;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.8;
+  }
+}
+.article__heading {
+  color: $color-gray-dark-1;
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+  margin-bottom: 3rem;
+
+  span {
+    display: block;
+  }
+
+  &--secondary {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-size: 12rem;
+    color: $color-gray-light-1;
+    line-height: 1;
+    margin-bottom: -6rem;
+    font-weight: 300;
+  }
+
+  &--main {
+    font-weight: 500;
   }
 }
 
@@ -156,7 +155,7 @@
   color: $color-gray-dark-1;
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 
   div {
     display: flex;

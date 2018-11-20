@@ -13,9 +13,6 @@
   .col-#{$i} {
     width: 8.33% * $i;
     float: left;
+    padding: 10px;
   }
-}
-
-.col-6 {
-  width: 8.33% * 6;
 }

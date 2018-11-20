@@ -86,6 +86,8 @@
 
 // MENU section
 .menu {
+  text-align: center;
+
   &__heading {
     height: 50vh;
     background: linear-bg($url: "../images/bg-2.png");
@@ -95,6 +97,62 @@
 
     h1 {
       @include center;
+    }
+  }
+
+  &__categories {
+    margin-top: 4rem;
+  }
+
+  &__category {
+    text-align: center;
+    padding: 0 2.5rem;
+  }
+
+  &__name {
+    color: $color-gray-dark-1;
+    text-transform: none;
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    border-bottom: 1px solid;
+    display: inline-block;
+  }
+
+  &__items {
+    text-align: left;
+  }
+
+  &__cta {
+    background: $color-gray-dark-1;
+    display: inline-block;
+    margin: auto;
+    margin-top: 4rem;
+
+    a,
+    a:link,
+    a:active,
+    a:hover,
+    a:visited {
+      color: $color-white;
+    }
+  }
+}
+
+// GALLERY section
+.gallery {
+  &__photos {
+    margin-top: 4rem;
+
+    .photo-frame {
+      overflow: hidden;
+
+      img {
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
