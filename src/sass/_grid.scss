@@ -2,3 +2,20 @@
   max-width: 1140px;
   margin: auto;
 }
+
+.row {
+  &::after {
+    @include clearfix;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 8.33% * $i;
+    float: left;
+  }
+}
+
+.col-6 {
+  width: 8.33% * 6;
+}
