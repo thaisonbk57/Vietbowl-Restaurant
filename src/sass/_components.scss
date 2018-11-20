@@ -1,0 +1,71 @@
+// NAVIGATION
+.nav {
+  text-align: center;
+
+  &__navbar {
+    display: inline-block;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      font-family: "EB Garamond", serif;
+      font-weight: 500;
+      display: inline-block;
+      color: $color-gray-dark-1;
+    }
+
+    &:active {
+      color: $color-secondary;
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: -4px;
+      height: 2px;
+      background: black;
+      left: 0;
+      width: 0;
+      opacity: 0.3;
+      transition: width 0.2s ease-out;
+    }
+  }
+
+  &__item:hover &__link::after {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &__item:hover &__link {
+    color: $color-secondary;
+  }
+
+  // if the nav__link has the class 'ACTIVE'
+  .active:after {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+// LOGO
+.logo {
+  font-size: 6rem;
+  text-align: center;
+  margin: auto;
+  font-weight: 400;
+
+  a {
+    display: inline-block;
+    font-family: "EB Garamond", serif;
+    color: $color-gray-dark-1;
+  }
+}
