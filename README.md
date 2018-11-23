@@ -2,12 +2,16 @@
 
 `html` `css (scss)` `javascript (jQuery)` `gulp`
 
+
+
 by [Thaison Dang](https://github.com/thaisonbk57)
+
+
+Try the [DEMO](#)
 
 
 ![screenshot](./screenshot.jpg)
 
-Try the [DEMO](#)
 
 # Features
 
