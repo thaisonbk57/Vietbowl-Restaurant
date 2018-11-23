@@ -6,6 +6,11 @@
 
 by [Thaison Dang](https://github.com/thaisonbk57)
 
+# Features
+
+- clients can make a reservation with the form.
+- excelent responsive design for all devices
+
 
 Try the [DEMO](#)
 
@@ -13,7 +18,3 @@ Try the [DEMO](#)
 ![screenshot](./screenshot.jpg)
 
 
-# Features
-
-- clients can make a reservation with the form.
-- excelent responsive design for all devices
