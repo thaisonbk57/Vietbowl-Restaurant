@@ -6,14 +6,14 @@
 @import "./components";
 
 // TESTING PURPOSE
-// .section:not(:nth-child(3)) {
-//   display: none;
-// }
-
-.footer {
+.section {
   display: none;
 }
 
-// .header__bottom {
+// .footer {
 //   display: none;
 // }
+
+.header__bottom {
+  display: none;
+}

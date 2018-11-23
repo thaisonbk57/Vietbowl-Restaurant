@@ -231,20 +231,37 @@
     display: flex;
     justify-content: space-evenly;
 
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+
     i {
       font-size: 2rem;
+
+      @media screen and (max-width: 768px) {
+        margin: 0 2rem;
+      }
     }
   }
 
   &__top {
     background-color: #151515;
     padding: 6rem 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 2rem 0;
+    }
+
     h3 {
       color: $color-white;
       font-size: 3rem;
       font-family: "EB Garamond", serif;
       font-weight: 300;
       margin-bottom: 1.5rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
     }
 
     p,
@@ -258,11 +275,5 @@
     a {
       color: $color-white;
     }
-  }
-
-  .article__heading--secondary {
-    font-size: 15rem;
-    transform: translateY(90px);
-    color: $color-gray-dark-2;
   }
 }
