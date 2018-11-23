@@ -23,6 +23,17 @@ img {
     letter-spacing: 3px;
     color: $color-white;
     font-weight: 300;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 10rem;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 8rem;
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 6rem;
+    }
   }
 
   &--secondary {
@@ -31,5 +42,13 @@ img {
     font-weight: 300;
     font-family: "EB Garamond", serif;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 2.3rem;
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 1.8rem;
+    }
   }
 }

@@ -4,3 +4,16 @@
 @import "./basic";
 @import "./layout";
 @import "./components";
+
+// TESTING PURPOSE
+.section:not(:nth-child(3)) {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+// .header__bottom {
+//   display: none;
+// }

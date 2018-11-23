@@ -17,6 +17,36 @@
   }
 }
 
+@media screen and (max-width: 920px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: 8.33% * $i;
+      float: left;
+      padding: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: 8.33% * $i;
+      float: left;
+      padding: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 556px) {
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+      width: 8.33% * $i;
+      float: left;
+      padding: 8px;
+    }
+  }
+}
+
 .form-control {
   display: block;
   width: 100%;
