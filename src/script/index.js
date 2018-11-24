@@ -10,4 +10,33 @@ $(document).ready(function() {
   $(".hero").css({
     height: `calc(100vh - ${headerHeight}px)`
   });
+
+  $("#reservation-submit-btn").on("click", e => {
+    e.preventDefault();
+    submitReservation();
+  });
+
+  function submitReservation() {
+    const [name, phone, date, time, seat, email, note] = [
+      $("[name='name']").val(),
+      $("[name='phone']").val(),
+      $("[name='date']").val(),
+      $("[name='time']").val(),
+      $("[name='seat']").val(),
+      $("[name='email']").val(),
+      $("[name='note']").val()
+    ];
+
+    const data = { name, phone, date, time, seat, email };
+
+    $.post(
+      "https://vietbowl-mail.herokuapp.com/new-reservation",
+      data,
+      function(res, status) {
+        if (status) {
+          $("#server-msg").text(res.message);
+        }
+      }
+    );
+  }
 });
