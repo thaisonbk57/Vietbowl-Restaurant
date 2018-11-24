@@ -429,7 +429,7 @@
           <div class="row">
             <div class="col-6 col-sm-12">
               <!-- TODO: make the form work -->
-              <form action="#">
+              <form>
                 <div class="form-group row">
                   <div class="col-6 col-xs-12">
                     <input
@@ -465,7 +465,7 @@
                       type="text"
                       name="time"
                       class="form-control"
-                      placeholder="Time *"
+                      placeholder="Time * 12:00 - 21:00"
                       required
                     />
                   </div>
@@ -485,8 +485,7 @@
                       type="email"
                       name="email"
                       class="form-control"
-                      placeholder="Email *"
-                      required
+                      placeholder="Email"
                     />
                   </div>
                 </div>
@@ -504,8 +503,18 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-12">
-                    <input type="submit" class="btn btn--cta" value="RESERVE" />
+                    <input
+                      id="reservation-submit-btn"
+                      type="submit"
+                      class="btn btn--cta"
+                      value="RESERVE"
+                    />
                   </div>
+                </div>
+
+                <!-- message from server. By default empty -->
+                <div class="form-group row">
+                  <div class="col-12"><p id="server-msg"></p></div>
                 </div>
               </form>
             </div>
@@ -570,11 +579,7 @@
     </footer>
 
     <!-- Bootstrap jQuery and Popper.js -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./script/index.js"></script>
   </body>
 </html>

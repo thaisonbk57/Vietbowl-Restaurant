@@ -35,6 +35,7 @@ $(document).ready(function() {
       function(res, status) {
         if (status) {
           $("#server-msg").text(res.message);
+          $("#server-msg").addClass(res.status);
         }
       }
     );

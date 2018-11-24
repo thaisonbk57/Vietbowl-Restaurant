@@ -258,3 +258,16 @@
   color: #636363;
   font-size: 1.6rem;
 }
+
+// SERVER MSG
+#server-msg {
+  font-size: 1.6rem;
+
+  &.ERROR {
+    color: rgb(190, 65, 65);
+  }
+
+  &.OK {
+    color: rgb(22, 209, 22);
+  }
+}
