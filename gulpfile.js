@@ -56,6 +56,11 @@ gulp.task("imagesMin", function() {
     .pipe(gulp.dest("dist/images/"));
 });
 
+// copy Fonts
+gulp.task("copyFont", () => {
+  gulp.src("./src/fonts/*").pipe(gulp.dest("./dist/fonts/"));
+});
+
 // WATCH
 gulp.task("watch", () => {
   gulp.watch("src/index.html", ["copyHtml"]);
@@ -64,7 +69,7 @@ gulp.task("watch", () => {
   gulp.watch("src/images/**/*", ["imagesMin"]);
 });
 
-gulp.task("build", ["copyHtml", "sass", "script", "imagesMin"]);
+gulp.task("build", ["copyHtml", "sass", "script", "imagesMin", "copyFont"]);
 
 // DEFAULT
 gulp.task("default", ["watch"]);
