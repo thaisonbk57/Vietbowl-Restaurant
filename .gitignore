@@ -1,0 +1,10 @@
+/node_modules
+
+dist
+
+
+.vscode/
+
+firebase.json
+.firebaserc
+.firebase
