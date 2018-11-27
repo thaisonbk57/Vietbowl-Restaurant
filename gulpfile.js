@@ -64,5 +64,7 @@ gulp.task("watch", () => {
   gulp.watch("src/images/**/*", ["imagesMin"]);
 });
 
+gulp.task("build", ["copyHtml", "sass", "script", "imagesMin"]);
+
 // DEFAULT
 gulp.task("default", ["watch"]);
