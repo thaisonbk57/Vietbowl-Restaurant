@@ -27,7 +27,7 @@ $(document).ready(function() {
       $("[name='note']").val()
     ];
 
-    const data = { name, phone, date, time, seat, email };
+    const data = { name, phone, date, time, seat, email, note };
 
     $.post(
       "https://vietbowl-mail.herokuapp.com/new-reservation",
