@@ -76,7 +76,7 @@ $(document).ready(function() {
   heroSectionHeightJustify();
 
   // reserve a table
-  $("#reservation-submit-btn").on("click", e => {
+  $("#reservation-form").on("submit", e => {
     e.preventDefault();
     submitReservation();
   });
