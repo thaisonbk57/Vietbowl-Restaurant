@@ -12,7 +12,7 @@ by [Thaison Dang](https://github.com/thaisonbk57)
 - excelent responsive design for all devices
 
 
-Try the [DEMO](#)
+Try the [DEMO](https://vietbowl-restaurant.firebaseapp.com/)
 
 
 ![screenshot](./screenshot.jpg)
